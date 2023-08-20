@@ -12,9 +12,9 @@
   unsigned int Dmessage = 0;
   IbusTrx ibusTrx;
   DiagTrx diagTrx;
-  uint8_t IbusOut[50];
+  uint8_t IbusOut[150];//Fail over 150. Why?!!!!
   int IbusOutMessLenght = 0;
-  uint8_t DiagOut[50];
+  uint8_t DiagOut[150];//Fail over 150. Why?!!!!
   int DiagOutMessLenght = 0;
 
 
@@ -23,7 +23,7 @@ void setup(){
     diagTrx.begin(Serial1);
 }
 
-void loop() 
+void loop() {
   bool messageWaiting = ibusTrx.available();
   bool DiagmessageWaiting = diagTrx.available();
   if (messageWaiting) {
