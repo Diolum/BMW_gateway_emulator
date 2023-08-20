@@ -5,3 +5,6 @@ Code for gateway emulation permiting diagnostic with INPA without the need of Cl
 
 Gateway protocol and packet handling.
 http://www.diolum.fr/analyse-gateway-e46
+
+Article.
+http://www.diolum.fr/gateway-bmw
